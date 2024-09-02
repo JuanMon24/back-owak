@@ -1,6 +1,5 @@
 const express = require('express');
 const jsonServer = require('json-server');
-const path = require('path');
 
 const app = express();
 const router = jsonServer.router('db.json'); // Archivo JSON que actúa como base de datos
