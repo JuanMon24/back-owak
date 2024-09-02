@@ -1,0 +1,14 @@
+{
+  "mensajes": [
+    {
+      "id": "1",
+      "nombre": "Juan",
+      "mensaje": "Hola, este es un mensaje."
+    },
+    {
+      "id": "67dd",
+      "name": "Juan Daniel",
+      "message": "loma"
+    }
+  ]
+}
