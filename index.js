@@ -9,16 +9,8 @@ const middlewares = jsonServer.defaults();
 app.use(middlewares);
 app.use('/api', router);
 
-// Si tienes un front-end, sirve los archivos estáticos
-app.use(express.static(path.join(__dirname, 'public')));
-
-// Maneja todas las demás rutas con un archivo de front-end
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
-
 // Configuración del puerto
 const port = process.env.PORT || 3001;
 app.listen(port, () => {
-  console.log(`Servidor corriendo en http://localhost:${port}`);
+  console.log(`Servidor corriendo en el puerto ${port}`);
 });
